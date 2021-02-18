@@ -6,6 +6,7 @@
   font-family: 'Alata', sans-serif;
 }
 
+<<<<<<< HEAD
 a,
 a:visited,
 a:active {
@@ -13,6 +14,8 @@ a:active {
   text-decoration: none;
 }
 
+=======
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
 body {
   background-color: #040e27;
 }
@@ -28,7 +31,10 @@ nav {
   z-index: 2;
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
   background-color: #040e27b6;
+=======
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
   padding: 25px 40px;
 }
 
@@ -37,6 +43,7 @@ header nav ul {
   align-items: center;
   margin: 0 auto;
   max-width: 1200px;
+<<<<<<< HEAD
 }
 
 nav ul li a {
@@ -47,6 +54,8 @@ nav ul li a {
 nav ul li:hover {
   transform: scale(1.1);
   transition: all ease-in 0.3s;
+=======
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
 }
 
 header nav ul li:nth-child(1) {
@@ -101,11 +110,16 @@ header::after {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+<<<<<<< HEAD
   max-width: 1800px;
+=======
+  max-width: 1400px;
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
   justify-content: space-between;
 }
 
 .project {
+<<<<<<< HEAD
   margin: 40px 0 0 0;
   width: 550px;
   height: 400px;
@@ -123,6 +137,17 @@ header::after {
   content: '';
   display: block;
   height: 100%;
+=======
+  margin: 40px 0;
+  width: 400px;
+  position: relative;
+}
+
+.project::after {
+  content: '';
+  display: block;
+  height: 99%;
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
   position: absolute;
   top: 0;
   bottom: 0;
@@ -130,21 +155,40 @@ header::after {
   right: 0;
   opacity: 0;
   transition: 0.5s ease-in;
+<<<<<<< HEAD
   background-color: #017ff5e0;
 }
 
 .project:hover .project-info {
+=======
+  background-color: #017ff5d2;
+}
+
+.project:hover::after {
+  opacity: 1;
+}
+
+.project:hover .project-info {
+  transform: translate(-50%, -50%);
+
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
   opacity: 1;
 }
 .project-img-container {
   width: 100%;
+<<<<<<< HEAD
   height: 100%;
   background-color: red;
+=======
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
 }
 
 .project-img-container img {
   width: 100%;
+<<<<<<< HEAD
   height: 100%;
+=======
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
   object-fit: cover;
 }
 
@@ -154,13 +198,18 @@ header::after {
   position: absolute;
   top: 50%;
   left: 50%;
+<<<<<<< HEAD
   transform: translate(-50%, -50%);
+=======
+  transform: translate(-50%, -210%);
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
   opacity: 0;
   text-align: center;
   z-index: 1;
   transition: all 0.5s ease 0s;
 }
 
+<<<<<<< HEAD
 .project:hover::after {
   opacity: 1;
 }
@@ -175,4 +224,10 @@ header::after {
 .project-info a:hover {
   transform: scale(0.95);
   transition: all 0.5s ease 0s;
+=======
+.project-info a {
+  background-color: #040e27d3;
+  padding: 15px 20px;
+  display: inline-block;
+>>>>>>> eb2dfb86f9fc4f2791d8c20582e9edc955f509a8
 }

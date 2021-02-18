@@ -5,8 +5,20 @@
   list-style: none;
   font-family: 'Alata', sans-serif;
 }
+
+a,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #040e27;
+}
 header {
   position: relative;
+  margin: 0 auto;
 }
 
 nav {
@@ -15,12 +27,26 @@ nav {
   position: fixed;
   z-index: 2;
   width: 100%;
+  margin: 0 auto;
+  background-color: #040e27b6;
   padding: 25px 40px;
 }
 
 header nav ul {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: all ease-in 0.3s;
 }
 
 header nav ul li:nth-child(1) {
@@ -34,9 +60,7 @@ header::after {
   display: block;
   width: 100%;
   height: 660px;
-  /* background-color: #040e27ee; */
   background-color: #040e27b6;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -45,22 +69,23 @@ header::after {
 .banner {
   height: 660px;
   text-align: center;
-  background-image: url('../images/coding.jpeg');
+  background-image: url('../images/showcase-bg.png');
   background-color: #040e27;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: contain;
+  background-position: center;
 }
 
 .banner-info {
   z-index: 1;
   position: absolute;
+  max-width: 600px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   width: 70%;
+  line-height: 45px;
 }
 .banner-info h2 {
   font-size: 40px;
@@ -70,4 +95,84 @@ header::after {
 .banner-info p {
   font-size: 35px;
   font-weight: bolder;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1800px;
+  justify-content: space-between;
+}
+
+.project {
+  margin: 40px 0 0 0;
+  width: 550px;
+  height: 400px;
+
+  /* height: 600px; */
+  position: relative;
+}
+
+.project-info p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+.project::after {
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  background-color: #017ff5e0;
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
+.project-img-container {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.project-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project .project-info {
+  display: block;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  transition: all 0.5s ease 0s;
+}
+
+.project:hover::after {
+  opacity: 1;
+}
+
+.project-info a {
+  background-color: #040e27c5;
+  padding: 15px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.project-info a:hover {
+  transform: scale(0.95);
+  transition: all 0.5s ease 0s;
 }

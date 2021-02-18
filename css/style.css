@@ -6,6 +6,13 @@
   font-family: 'Alata', sans-serif;
 }
 
+a,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   background-color: #040e27;
 }
@@ -22,6 +29,7 @@ nav {
   width: 100%;
   margin: 0 auto;
   padding: 25px 40px;
+  background-color: #040e27;
 }
 
 header nav ul {
@@ -29,6 +37,10 @@ header nav ul {
   align-items: center;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+header nav ul li {
+  font-size: 20px;
 }
 
 header nav ul li:nth-child(1) {
@@ -81,22 +93,24 @@ header::after {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  max-width: 2500px;
   margin: 0 auto;
-  max-width: 1400px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .project {
-  margin: 40px 0;
-  width: 400px;
+  margin: 40px 5px;
+  width: 450px;
+  height: 400px;
   position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.562);
 }
 
 .project::after {
   content: '';
   display: block;
-  height: 99%;
+  height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -104,7 +118,7 @@ header::after {
   right: 0;
   opacity: 0;
   transition: 0.5s ease-in;
-  background-color: #017ff5d2;
+  background-color: #017ff5e8;
 }
 
 .project:hover::after {
@@ -112,16 +126,16 @@ header::after {
 }
 
 .project:hover .project-info {
-  transform: translate(-50%, -50%);
-
   opacity: 1;
 }
 .project-img-container {
   width: 100%;
+  height: 100%;
 }
 
 .project-img-container img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -131,15 +145,25 @@ header::after {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -210%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   text-align: center;
   z-index: 1;
   transition: all 0.5s ease 0s;
 }
 
-.project-info a {
+.project-info p {
+  font-size: 20px;
+}
+
+.project-info .project-links a {
   background-color: #040e27d3;
   padding: 15px 20px;
   display: inline-block;
+  cursor: pointer;
+}
+
+.project-info .project-links a:hover {
+  transform: scale(0.96);
+  transition: all ease-in 0.4s;
 }

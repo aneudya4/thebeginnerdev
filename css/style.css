@@ -84,7 +84,7 @@ header::after {
 .banner-info {
   z-index: 1;
   position: absolute;
-  max-width: 650px;
+  max-width: 600px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -30%);

@@ -97,7 +97,7 @@ header::after {
   margin: 20px 0;
 }
 .banner-info p {
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 200;
 }
 
@@ -251,7 +251,7 @@ footer p:last-of-type {
   }
 
   .banner-info h2 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   .banner-info p {

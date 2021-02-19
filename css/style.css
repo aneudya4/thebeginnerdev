@@ -107,6 +107,11 @@ header::after {
   border: 1px solid rgba(0, 0, 0, 0.562);
 }
 
+.projects::after {
+  content: '';
+  width: 450px;
+}
+
 .project::after {
   content: '';
   display: block;

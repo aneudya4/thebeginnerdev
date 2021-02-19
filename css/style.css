@@ -74,7 +74,7 @@ header::after {
 .banner {
   height: 660px;
   text-align: center;
-  background-image: url('../images/showcase-bg.png');
+  background-image: url('https://ik.imagekit.io/aneudyimages/showcase-bg_yJD6Y35M4.webp');
   background-color: #040e27;
   background-repeat: no-repeat;
   background-size: contain;

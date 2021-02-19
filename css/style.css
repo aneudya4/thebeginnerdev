@@ -138,7 +138,7 @@ header::after {
 }
 
 .project {
-  margin: 40px 5px;
+  margin: 20px 5px;
   width: 450px;
   height: 400px;
   position: relative;
@@ -265,6 +265,10 @@ footer p:last-of-type {
 }
 
 @media all and (min-width: 1000px) {
+  header nav ul li:hover {
+    transform: scale(1.1);
+    transition: all ease-in 0.5s;
+  }
   .project::after {
     opacity: 0;
   }

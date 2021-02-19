@@ -89,7 +89,7 @@ header::after {
   margin: 20px 0;
 }
 .banner-info p {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 200;
 }
 
@@ -101,18 +101,23 @@ header::after {
 }
 
 .about h2 {
-  font-size: 40px;
+  font-size: 45px;
   font-style: italic;
+  margin-bottom: 15px;
 }
 
 .about-info {
   text-align: center;
   font-weight: 400;
-  max-width: 650px;
-  margin: 20px auto;
-  font-size: 26px;
+  max-width: 850px;
+  margin: 0px auto;
+  font-size: 23px;
   line-height: 33px;
   padding: 0 15px;
+}
+
+.about-info p:first-of-type {
+  margin-bottom: 10px;
 }
 
 .projects {
@@ -179,10 +184,22 @@ header::after {
   text-align: center;
   z-index: 1;
   transition: all 0.5s ease 0s;
+  width: 100%;
 }
 
 .project-info p {
-  font-size: 20px;
+  font-size: 30px;
+}
+
+.project-info span {
+  text-transform: uppercase;
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.project-info .project-links {
+  margin-top: 10px;
 }
 
 .project-info .project-links a {
@@ -209,6 +226,10 @@ footer a {
   display: inline-block;
   color: White;
   margin: 0 15px 10px 0;
+}
+
+footer a:hover {
+  transform: scale(1.1);
 }
 
 footer p.copyright {

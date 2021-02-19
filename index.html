@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Document</title>
+    <title>Web Projects Collection</title>
   </head>
   <body>
     <main>
@@ -13,24 +14,35 @@
           <ul>
             <li><h1>Aneudy Adames</h1></li>
             <li><a href="/">Home</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </nav>
         <div class="banner">
           <div class="banner-info">
-            <h2>Small Web Development Projects</h2>
+            <h2>Web Development Projects</h2>
             <p>
-              Im building all these projects for codenewbies to find inspiration
-              on.
-              <span>Web Development</span> <span>Projects</span>!
+              Collection of small web development projects meant to practice and
+              improve Html, Css and JavaScript skills
             </p>
           </div>
         </div>
       </header>
-
-      <section class="projects">
-        <div class="project">
+      <section class="about" id="about">
+        <h2>About</h2>
+        <div class="about-info">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            veritatis eligendi ea at id nobis dolorum voluptates minima dolorem
+            hic sequi ducimus fugiat temporibus eveniet! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Cum, veritatis eligendi ea at id
+            nobis dolorum voluptates minima dolorem hic sequi ducimus fugiat
+            temporibus eveniet!
+          </p>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="project" id="project">
           <div class="project-img-container">
             <img src="./projects/pokemon-app.png" />
           </div>
@@ -265,7 +277,33 @@
           </div>
         </div>
       </section>
+      <footer>
+        <a
+          href="https://github.com/aneudya4/"
+          aria-label="Github"
+          title="Github"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://twitter.com/AneudyA4"
+          aria-label="Twitter"
+          title="Twitter"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <p class="copyright">&copy; All Rights Reserved</p>
+        <p>Developed by Aneudy Adames</p>
+      </footer>
     </main>
+    <script
+      src="https://kit.fontawesome.com/4fbeabb42e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

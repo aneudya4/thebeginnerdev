@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,600;1,400;1,500&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: 'Alata', sans-serif;
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
 }
 
 a,
@@ -82,13 +84,35 @@ header::after {
   line-height: 45px;
 }
 .banner-info h2 {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 45px;
+  font-weight: 600;
   margin: 20px 0;
 }
 .banner-info p {
-  font-size: 35px;
-  font-weight: bolder;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.about {
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #07173f;
+}
+
+.about h2 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.about-info {
+  text-align: center;
+  font-weight: 400;
+  max-width: 650px;
+  margin: 20px auto;
+  font-size: 26px;
+  line-height: 33px;
+  padding: 0 15px;
 }
 
 .projects {
@@ -171,4 +195,26 @@ header::after {
 .project-info .project-links a:hover {
   transform: scale(0.96);
   transition: all ease-in 0.4s;
+}
+
+footer {
+  background-color: #07173f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer a {
+  font-size: 30px;
+  display: inline-block;
+  color: White;
+  margin: 0 15px 10px 0;
+}
+
+footer p.copyright {
+  margin-bottom: 5px;
+}
+
+footer p:last-of-type {
+  font-size: 15px;
 }

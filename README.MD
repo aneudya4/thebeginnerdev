@@ -8,7 +8,8 @@ I created for two reasons: to showcase the projects I built while learning how t
 
 ## Showcase
 
-Homepage
+## Homepage
+
 ![homepage](readme_assets/homepage.webp)
 
 ## Content view

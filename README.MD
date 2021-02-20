@@ -13,7 +13,8 @@ Homepage
 
 ## Content view
 
-Project information view
+## Project information view
+
 ![project-view](readme_assets/giphy.gif)
 
 ## Built With

@@ -4,10 +4,6 @@
 
 I created for two reasons: to showcase the projects I built while learning how to code, and for code newbies to have a place to find ideas for fun projects.
 
-## Screenshots
-
-## Showcase
-
 ## Homepage
 
 ![homepage](readme_assets/homepage.webp)
